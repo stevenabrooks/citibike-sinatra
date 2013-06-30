@@ -1,1 +1,21 @@
-<%= @data.inspect %>
+<ul>
+<% @data.each do |hash| %>
+<li>Name: <%= hash["name"] %></li>
+<li>Latitude: <%= hash["lat"] %></li>
+<li>Longitude: <%= hash["lng"] %></li><br>
+<% end %>
+</ul>
+
+
+
+<!-- {"name"=>"W 52 St & 11 Ave",
+ "idx"=>0,
+ "timestamp"=>"2013-06-27T02:11:01.259248",
+ "number"=>72,
+ "free"=>32,
+ "bikes"=>6,
+ "coordinates"=>"",
+ "address"=>"W 52 St & 11 Ave",
+ "lat"=>40767272,
+ "lng"=>-73993928,
+ "id"=>0} -->
